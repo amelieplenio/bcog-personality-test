@@ -87,7 +87,8 @@ def main():
                     "traits": {"openness": 2}
                 }
             ]
-    
+        }
+    ]
         
 
 
@@ -98,10 +99,10 @@ def main():
 
 
     morning_scenario = scenarios[0]
-    group_project_scenario = scenario[1]
+    group_project_scenario = scenarios[1]
 
 
-        morning_choice = play_scenario(morning_scenario)
+    morning_choice = play_scenario(morning_scenario)
     scores = update_trait_scores(morning_choice, scores)
 
     if morning_choice["traits"] == {"conscientiousness": 2}:
@@ -174,6 +175,9 @@ def main():
         next_choice = play_scenario(stressful_scenario)
 
     scores = update_trait_scores(next_choice, scores)
+
+    group_choice = play_scenario(group_project_scenario)
+    scores = update_trait_scores(group_choice, scores)
 
     show_final_result(scores)
 
