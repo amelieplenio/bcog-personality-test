@@ -11,12 +11,16 @@ def play_scenario (scenario):
     print(scenario["text"])
 
     for number, option in enumerate(scenario["options"], start=1):
+        print(f"{number}, {option['text']}")
+        
     while True:
         choice = input("Choose 1, 2, or 3: ")
-    if choice in ["1", "2", "3"]:
-    return scenario["options"][int(choice) - 1]
-    print("Please enter 1, 2, or 3.")
-    print(f"{number}, {option['text']}")
+        
+        if choice in ["1", "2", "3"]:
+            return scenario["options"][int(choice) - 1]
+            
+        print("Please enter 1, 2, or 3.")
+    
    
 def update_trait_scores (choice,scores):
     for trait, points in choice["traits"].items():
@@ -62,7 +66,11 @@ def main():
              },
              {
                  "text": "Stay in bed longer because you just can't start the day yet.",
-                 "traits": {neuroticism": 2}
+                 "traits": {"neuroticism": 2}
+                }
+             ]
+            }
+        ]
 
 
 
