@@ -101,44 +101,44 @@ def main():
     group_project_scenario = scenario[1]
 
 
-    morning_choice = play_scenario(morning_scenario)
+        morning_choice = play_scenario(morning_scenario)
     scores = update_trait_scores(morning_choice, scores)
 
     if morning_choice["traits"] == {"conscientiousness": 2}:
-          
-      productive_scenario = {
-         "title": "Study Session",
-          "text": "Because you made it to class on time, you're feeling like continuing the momentum with a study session.",
-           "options": [
-                { 
-                    "text": "Head to the Library to get ahead on assignments.",
+
+        productive_scenario = {
+            "title": "Study Session",
+            "text": "Because you made it to class on time, you're feeling like continuing the momentum with a study session.",
+            "options": [
+                {
+                    "text": "Head to the library to get ahead on assignments.",
                     "traits": {"conscientiousness": 2}
                 },
                 {
                     "text": "Invite classmates to study together after class.",
-                    "traits": {extraversion": 2} 
+                    "traits": {"extraversion": 2}
                 },
                 {
                     "text": "Try studying somewhere completely new alone.",
-                    "traits": {"openness": 2} 
+                    "traits": {"openness": 2}
                 }
             ]
         }
-                  
+
         next_choice = play_scenario(productive_scenario)
-                   
- elif morning_choice["traits"] == {"extraversion": 2}:
-                   
-    social_scenario = {
+
+    elif morning_choice["traits"] == {"extraversion": 2}:
+
+        social_scenario = {
             "title": "Class Conversation",
-            "text": "After you found out your friend was coming to class, you end up talking with classmates after class ends.",
+            "text": "After you find out your friend is coming to class, you end up talking with classmates after class ends.",
             "options": [
                 {
                     "text": "Stay and talk with everyone for a long time.",
                     "traits": {"extraversion": 2}
                 },
                 {
-                    "text": "Make sure to ask questions and ensure nobody feels left out of the conversation.", 
+                    "text": "Make sure to ask questions and ensure nobody feels left out of the conversation.",
                     "traits": {"agreeableness": 2}
                 },
                 {
@@ -149,35 +149,34 @@ def main():
         }
 
         next_choice = play_scenario(social_scenario)
-                   
- else:
 
-    stressful_scenario = {
-        "title": "Missed class",
-        "text": "Since you stayed in bed, you now feel stressed about missing class.",
-        "options": [
-            {
-                 "text": "Email your professor to ask for any content you missed.",
-                 "traits": {"conscientiousness": 2}
-            },
-            {
-                 "text": "Text classmates to ask for notes.", 
-                 "traits": {"agreeableness": 2}
-            },
-            {
-                 "text": "Avoid thinking about it too much and go back to sleep.",
-                "traits": {"neuroticism": 2}
-            }
-        ]
-    }
+    else:
 
-    next_choice = play_scenario(stressful_scenario)
+        stressful_scenario = {
+            "title": "Missed Class",
+            "text": "Since you stayed in bed, you now feel stressed about missing class.",
+            "options": [
+                {
+                    "text": "Email your professor to ask for any content you missed.",
+                    "traits": {"conscientiousness": 2}
+                },
+                {
+                    "text": "Text classmates to ask for notes.",
+                    "traits": {"agreeableness": 2}
+                },
+                {
+                    "text": "Avoid thinking about it too much and go back to sleep.",
+                    "traits": {"neuroticism": 2}
+                }
+            ]
+        }
 
-scores = update_trait_scores(next_choice, scores)
-                  
+        next_choice = play_scenario(stressful_scenario)
 
+    scores = update_trait_scores(next_choice, scores)
 
     show_final_result(scores)
+
 
 if __name__ == "__main__":
     main() 
