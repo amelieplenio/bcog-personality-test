@@ -62,13 +62,20 @@ def main():
              {
                  "text": "Stay in bed longer because you just can't start the day yet.",
                  "traits: {neuroticism": 2}
-    # future structure:
-    # scores + {}
-    # scenario = ...
-    # choice = play_scenario(scenario)
-    # scores = update_trait_scores(choice,scores)
-    # show_final_results (scores)
-    
+
+
+
+
+
+
+
+
+             
+    for scenario in scenarios:
+        choice = play_scenario(scenario)
+        scores = update_trait_scores(choice,scores)
+
+    show_final_result(scores)
 
 if __name__ == "__main__":
     main() 
