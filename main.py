@@ -87,7 +87,7 @@ def main():
                     "traits": {"openness": 2}
                 }
             ]
-        },
+    
         
 
 
@@ -97,11 +97,35 @@ def main():
 
 
 
-             
-     morning_scenario = scenarios[0]
+    morning_scenario = scenarios[0]
+    group_project_scenario = scenario[1]
+
 
     morning_choice = play_scenario(morning_scenario)
     scores = update_trait_scores(morning_choice, scores)
+
+    if morning_choice["traits"] == {"conscientiousness": 2}:
+      productive_scenario = {
+         "title": "Study Session",
+          "text": "Because you made it to class on time, you're feeling like continuing the momentum with a study session.",
+           "options": [
+                { 
+                    "text": "Head to the Library to get ahead on assignments.",
+                    "traits": {"conscientiousness": 2}
+                },
+                {
+                    "text": "Invite classmates to study together after class.",
+                    "traits": {extraversion": 2} 
+                },
+                {
+                    "text": "Try studying somewhere completely new alone.",
+                    "traits": {"openness": 2} 
+                }
+            ]
+        }
+        next_choice = play_scenario(productive_scenario)
+                   
+
 
     show_final_result(scores)
 
