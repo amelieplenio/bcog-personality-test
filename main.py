@@ -42,14 +42,33 @@ def show_final_result(scores):
     
 
 def main():
-    """Run the whole game."""
+    print("Welcome to the College Day Personality Adventure Game!")
+    print("Make your most realistic choices throughout the day and see which personality trait shows up the most for you and what they mean!")
+    scores = make_scores()
+
+    scenarios = [
+        { 
+        "title": "Morning Class",
+         "text": "You wake up tired at around 7:30am and you realize you have class soon.",
+         "options": [
+             {
+                 "text": "Get up right away and make it on time.",
+                 "traits": {"conscientiousness": 2}
+             },
+             {
+                 "text": "Text your friend in the class to see if they're going or not.",
+                 "traits": {"extraversion": 2}
+             },
+             {
+                 "text": "Stay in bed longer because you just can't start the day yet.",
+                 "traits: {neuroticism": 2}
     # future structure:
     # scores + {}
     # scenario = ...
     # choice = play_scenario(scenario)
     # scores = update_trait_scores(choice,scores)
     # show_final_results (scores)
-    pass
+    
 
 if __name__ == "__main__":
     main() 
