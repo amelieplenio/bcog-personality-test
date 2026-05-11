@@ -3,31 +3,32 @@ def make_scores():
         "openness": 0,
         "extraversion": 0,
         "agreeableness": 0,
-        "conscientousness": 0,
+        "conscientiousness": 0,
         "neuroticism": 0, }
     
 def play_scenario (scenario):
-    print("/n" + scenario[title"])
-    print(scenario["text]")
+    print("\n" + scenario["title"])
+    print(scenario["text"])
 
     for number, option in enumerate(scenario["options"], start=1):
-    while True
+    while True:
         choice = input("Choose 1, 2, or 3: ")
     if choice in ["1", "2", "3"]:
-        return scenario["options"][int(choice) - 1]
+    return scenario["options"][int(choice) - 1]
     print("Please enter 1, 2, or 3.")
-    
+    print(f"{number}, {option['text']}")
    
 def update_trait_scores (choice,scores):
-   for trait, points in choice["traits"].items():
-       scores[trait] += points
+    for trait, points in choice["traits"].items():
+        scores[trait] += points
+
     return scores
        
 
 def show_final_result(scores):
 
     print("\nYour final trait scores:")
-    for trait, score in scores.items()
+    for trait, score in scores.items():
         print(f"{trait.title()}: {score}")
 
     highest_trait = max(scores, key=scores.get)
@@ -37,8 +38,8 @@ def show_final_result(scores):
         "extraversion": "You are outgoing, social, and energized by other people.",
         "agreeableness": "You are caring, cooperative, and thoughtful toward others.",
         "neuroticism": "You may be more emotionally reactive or sensitive to stress." }
-    print("/nYour strongest trait is:", highest_trait.title())
-    print(description[highest_trait])
+    print("\nYour strongest trait is:", highest_trait.title())
+    print(descriptions[highest_trait])
     
 
 def main():
@@ -61,7 +62,7 @@ def main():
              },
              {
                  "text": "Stay in bed longer because you just can't start the day yet.",
-                 "traits: {neuroticism": 2}
+                 "traits": {neuroticism": 2}
 
 
 
