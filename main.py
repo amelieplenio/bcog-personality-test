@@ -4,7 +4,7 @@ def make_scores():
         "extraversion": 0,
         "agreeableness": 0,
         "conscientiousness": 0,
-        "neuroticism": 0, }
+        "neuroticism": 0 }
     
 def play_scenario (scenario):
     print("\n" + scenario["title"])
