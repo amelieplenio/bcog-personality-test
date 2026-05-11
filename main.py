@@ -11,7 +11,7 @@ def play_scenario (scenario):
     print(scenario["text"])
 
     for number, option in enumerate(scenario["options"], start=1):
-        print(f"{number}, {option['text']}")
+        print(f"{number}. {option['text']}")
         
     while True:
         choice = input("Choose 1, 2, or 3: ")
@@ -69,8 +69,26 @@ def main():
                  "traits": {"neuroticism": 2}
                 }
              ]
-            }
-        ]
+        },
+        {
+            "title": "Group Project",
+            'text": 'You realize your group project is due tomorrow, but nobody else has started!",
+            "options: [
+                {
+                    "text": "Make a firm plan about who is doing what and when it needs to be done.",
+                    "traits": {"conscientiousness": 2}
+                },
+                {
+                    "text": "Text everyone in the group to look at the project whenever they can.",
+                    "traits": {"agreeableness": 2}
+                },
+                {
+                    "text": "Suggest a different way everyone can do the project to make it more interesting.",
+                    "traits": {"openness": 2}
+                }
+            ]
+        },
+        {
 
 
 
