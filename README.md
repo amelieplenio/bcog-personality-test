@@ -11,6 +11,7 @@ Main features:
 - Simple terminal based gameplay
 Files in this Project
 - main.py: this will contain the main game logic and functions.
+  (NOT DONE: still need to finish all the scenarios and end screens.)
 
 - test_project.py: This will contain tests or the testing outline.
 
