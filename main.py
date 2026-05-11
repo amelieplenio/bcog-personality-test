@@ -98,9 +98,10 @@ def main():
 
 
              
-    for scenario in scenarios:
-        choice = play_scenario(scenario)
-        scores = update_trait_scores(choice,scores)
+     morning_scenario = scenarios[0]
+
+    morning_choice = play_scenario(morning_scenario)
+    scores = update_trait_scores(morning_choice, scores)
 
     show_final_result(scores)
 
