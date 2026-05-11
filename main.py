@@ -18,13 +18,28 @@ def play_scenario (scenario):
     print("Please enter 1, 2, or 3.")
     
    
-    pass
 def update_trait_scores (choice,scores):
-    """Update personality trait scores."""
-    pass
+   for trait, points in choice["traits"].items():
+       scores[trait] += points
+    return scores
+       
+
 def show_final_result(scores):
-    """Display the final personality result."""
-pass
+
+    print("\nYour final trait scores:")
+    for trait, score in scores.items()
+        print(f"{trait.title()}: {score}")
+
+    highest_trait = max(scores, key=scores.get)
+    descriptions = {
+        "openness": "You are curious, creative, and open to trying new things.",
+        "conscientiousness": "You are organized, responsible, and goal focused.",
+        "extraversion": "You are outgoing, social, and energized by other people.",
+        "agreeableness": "You are caring, cooperative, and thoughtful toward others.",
+        "neuroticism": "You may be more emotionally reactive or sensitive to stress." }
+    print("/nYour strongest trait is:", highest_trait.title())
+    print(description[highest_trait])
+    
 
 def main():
     """Run the whole game."""
