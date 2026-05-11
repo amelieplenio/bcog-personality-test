@@ -105,6 +105,7 @@ def main():
     scores = update_trait_scores(morning_choice, scores)
 
     if morning_choice["traits"] == {"conscientiousness": 2}:
+          
       productive_scenario = {
          "title": "Study Session",
           "text": "Because you made it to class on time, you're feeling like continuing the momentum with a study session.",
@@ -123,8 +124,57 @@ def main():
                 }
             ]
         }
+                  
         next_choice = play_scenario(productive_scenario)
                    
+ elif morning_choice["traits"] == {"extraversion": 2}:
+                   
+    social_scenario = {
+            "title": "Class Conversation",
+            "text": "After you found out your friend was coming to class, you end up talking with classmates after class ends.",
+            "options": [
+                {
+                    "text": "Stay and talk with everyone for a long time.",
+                    "traits": {"extraversion": 2}
+                },
+                {
+                    "text": "Make sure to ask questions and ensure nobody feels left out of the conversation.", 
+                    "traits": {"agreeableness": 2}
+                },
+                {
+                    "text": "Bring up something interesting from the lecture that starts a debate.",
+                    "traits": {"openness": 2}
+                }
+            ]
+        }
+
+        next_choice = play_scenario(social_scenario)
+                   
+ else:
+
+    stressful_scenario = {
+        "title": "Missed class",
+        "text": "Since you stayed in bed, you now feel stressed about missing class.",
+        "options": [
+            {
+                 "text": "Email your professor to ask for any content you missed.",
+                 "traits": {"conscientiousness": 2}
+            },
+            {
+                 "text": "Text classmates to ask for notes.", 
+                 "traits": {"agreeableness": 2}
+            },
+            {
+                 "text": "Avoid thinking about it too much and go back to sleep.",
+                "traits": {"neuroticism": 2}
+            }
+        ]
+    }
+
+    next_choice = play_scenario(stressful_scenario)
+
+scores = update_trait_scores(next_choice, scores)
+                  
 
 
     show_final_result(scores)
