@@ -33,18 +33,16 @@ def test_multiple_updates():
   
 
 def test_get_highest_trait():
+    scores = {
+      "openness": 1,
+      "extraversion": 0,
+      "agreeableness": 2,
+      "conscientiousness": 5,
+      "neuroticism": 1, }
 
-   
+    assert get_highest_trait(scores) == "conscientiousness"
 
-    
 
-def test_trait_updates():
-
-  
-
-   
-
-  
 
     if __name__ =="__main__":
         test_make_scores()
