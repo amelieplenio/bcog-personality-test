@@ -66,5 +66,6 @@ To test the program, python test-project.py will be ran in terminal.
 - Scenarios will display correctly. 
 - Choices update trait scores.
 - A final personality trait will then be shown in some way at the end.
+- Branching scenarios that change based on player choices
 
 
