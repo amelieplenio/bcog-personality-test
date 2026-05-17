@@ -55,17 +55,21 @@ def show_final_result(scores):
         "agreeableness": "You are caring, cooperative, and thoughtful toward others.",
         "neuroticism": "You may be more emotionally reactive or sensitive to stress." }
     
-    print("\nFinal Personality Result!")
+ print("\nFinal Personality Result!")
     print("\nYour strongest trait is:", highest_trait.title())
     print(descriptions[highest_trait])
-    print("\nThanks for playing the College Personality Adventure Game!")
+    print("\nThanks for playing the College Personality Adventure Game :)")
 
 def main():
-    print("Welcome to the College Day Personality Adventure Game!")
-    print("Make your most realistic choices throughout the day and see which personality trait shows up the most for you and what they mean!")
-    scores = make_scores()
+   print("=" * 60)
+print("       ✦ WELCOME TO THE COLLEGE DAY PERSONALITY ADVENTURE ✦")
+print("                  WITH BIG FIVE TRAITS ")
+print("=" * 60)
 
-    morning_scenario = { 
+print("Make your most realistic choices throughout the day and see which personality trait shows up the most for you and what they mean!")
+scores = make_scores()
+
+morning_scenario = { 
         "title": "Morning Class",
          "text": "You wake up tired at around 7:30am and you realize you have class soon.",
          "options": [
@@ -84,7 +88,7 @@ def main():
            ]
       }
     
-        group_project_scenario =  {
+ group_project_scenario =  {
             "title": "Group Project",
             "text": "You realize your group project is due tomorrow, but nobody else has started!",
             "options": [
