@@ -10,7 +10,7 @@ This project will be an interactive Python game based off of Personality Psych. 
 I worked on this project alernating between VS Code and Github to make sure it would run properly and was formatted correctly.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Main features: 
+# Code structure: 
 - Interactive scenarios where the user makes choices
 - Scoring system based on the Big Five Personality traits
 - Final personality result with a short description
