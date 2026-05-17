@@ -44,17 +44,21 @@ Parameters:
 - scores: final personality trait scores
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Personality traits used: This program will use the Big Five personality traits:
+# Personality traits used: 
+- This program will use the Big Five personality traits:
 Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Example Use Case: A user will run the program and is presented with a scenarion like choosing how to spend a free day with a series of choices. Based on their answers, points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
+# Example Use Case:
+A user will run the program and is presented with a scenarion like choosing how to spend a free day with a series of choices. Based on their answers, points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-How to run: Run the program in terminal with python main.py
+# How to run: 
+Run the program in terminal with python main.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Testing: to test the program, python test_project.py will be ran in terminal. 
+# Testing: 
+to test the program, python test_project.py will be ran in terminal. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Expected result:
