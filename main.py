@@ -27,6 +27,9 @@ def update_trait_scores (choice,scores):
         scores[trait] += points
 
     return scores
+
+def get_highest_trait(scores):
+    return max(scores, key=scores.get)
        
 
 def show_final_result(scores):
@@ -35,24 +38,26 @@ def show_final_result(scores):
     for trait, score in scores.items():
         print(f"{trait.title()}: {score}")
 
-    highest_trait = max(scores, key=scores.get)
+    highest_trait = get_highest_trait(scores)
+    
     descriptions = {
         "openness": "You are curious, creative, and open to trying new things.",
         "conscientiousness": "You are organized, responsible, and goal focused.",
-        "extraversion": "You are outgoing, social, and energized by other people.",
+        "extraversion": "You are outgoing, social, and feel energized by other people.",
         "agreeableness": "You are caring, cooperative, and thoughtful toward others.",
         "neuroticism": "You may be more emotionally reactive or sensitive to stress." }
+    
+    print("\nFinal Personality Result!")
     print("\nYour strongest trait is:", highest_trait.title())
     print(descriptions[highest_trait])
-    
+    print("\nThanks for playing the College Personality Adventure Game!")
 
 def main():
     print("Welcome to the College Day Personality Adventure Game!")
     print("Make your most realistic choices throughout the day and see which personality trait shows up the most for you and what they mean!")
     scores = make_scores()
 
-    scenarios = [
-        { 
+    morning_scenario = { 
         "title": "Morning Class",
          "text": "You wake up tired at around 7:30am and you realize you have class soon.",
          "options": [
@@ -68,9 +73,10 @@ def main():
                  "text": "Stay in bed longer because you just can't start the day yet.",
                  "traits": {"neuroticism": 2}
                 }
-             ]
-        },
-        {
+           ]
+      }
+    
+        group_project_scenario =  {
             "title": "Group Project",
             "text": "You realize your group project is due tomorrow, but nobody else has started!",
             "options": [
@@ -88,13 +94,26 @@ def main():
                 }
             ]
         }
+
+        evening_scenario =  {
+            "title": "End of the day",
+            "text": "After the long day, you finally have some free time.",
+            "options": [
+                {
+                    "text": "Try a new activity or hobby you have been curious about.",
+                    "traits": {"openness": 2}
+                },
+                {
+                    "text": "Go over your schedule for tomorrow again before you're able to relax.",
+                    "traits": {"conscientiousness": 2}
+                },
+                {
+                    "text": "Call a friend to discuss your day.",
+                    "traits": {"extraversion": 2}
+                }
+            ]
+        }
     ]
-        
-
-
-
-
-
 
 
 
@@ -178,6 +197,9 @@ def main():
 
     group_choice = play_scenario(group_project_scenario)
     scores = update_trait_scores(group_choice, scores)
+
+    evening_choice = play_scenario(evening_project_scenario)
+    scores = update_trait_scores(evening_choice, scores)
 
     show_final_result(scores)
 
