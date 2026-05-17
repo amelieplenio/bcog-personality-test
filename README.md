@@ -1,4 +1,5 @@
 Personality-adventure-game
+<img width="1842" height="1214" alt="image" src="https://github.com/user-attachments/assets/022be762-c530-4318-81f2-4725450bb952" />
 
 
 1. This project will be an interactive Python game based off of Personality Psych. In the game, the player will go through a real life day and respond to different scenarios. Each choice will add points to different personality traits based on the Big Five personality traits. At the end of the game, the program will determine which Personality style the player most closely matches, and will display a fun screen of the personality type with a short description.
