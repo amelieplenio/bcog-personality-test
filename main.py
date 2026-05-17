@@ -5,6 +5,14 @@ def make_scores():
         "agreeableness": 0,
         "conscientiousness": 0,
         "neuroticism": 0 }
+
+def print_line():
+    print("=" * 60)
+
+def print_section(title):
+    print_line()
+    print(title.upper())
+    print_line()
     
 def play_scenario (scenario):
     print("\n" + scenario["title"])
