@@ -50,7 +50,7 @@ Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Example Use Case:
-A user will run the program and is presented with a scenarion like choosing how to spend a free day with a series of choices. Based on their answers, points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
+A user will run the program and is presented with a scenario like choosing how to spend a college day with a series of choices. Based on their answers, different scenarios will be presented, and points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # How to run: 
