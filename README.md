@@ -1,4 +1,4 @@
-Personality-adventure-game
+# Personality-adventure-game
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img width="1842" height="1214" alt="image" src="https://github.com/user-attachments/assets/022be762-c530-4318-81f2-4725450bb952" />
@@ -10,7 +10,7 @@ This project will be an interactive Python game based off of Personality Psych. 
 I worked on this project alernating between VS Code and Github to make sure it would run properly and was formatted correctly.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Main features: 
+# Main features: 
 - Interactive scenarios where the user makes choices
 - Scoring system based on the Big Five Personality traits
 - Final personality result with a short description
@@ -24,7 +24,7 @@ Files in this Project
 - data/: will maybe contain the scenario and personality description data
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Planned Functions:
+# Planned Functions:
 - play_scenario(scenario): this will display a scenario and ask the player to then choose between options
 Parameters:
 
@@ -44,11 +44,11 @@ Parameters:
 - scores: final personality trait scores
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Personality traits used: This program will use the Big Five personality traits:
+# Personality traits used: This program will use the Big Five personality traits:
 Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Example Use Case: A user will run the program and is presented with a scenarion like choosing how to spend a free day with a series of choices. Based on their answers, points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
+# Example Use Case: A user will run the program and is presented with a scenarion like choosing how to spend a free day with a series of choices. Based on their answers, points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 How to run: Run the program in terminal with python main.py
@@ -57,7 +57,7 @@ How to run: Run the program in terminal with python main.py
 Testing: to test the program, python test_project.py will be ran in terminal. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Expected result:
+# Expected result:
 - The program runs without errors.
 - Scenarios will display correctly. 
 - Choices update trait scores.
