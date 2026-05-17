@@ -107,7 +107,45 @@ morning_scenario = {
             ]
         }
 
-        evening_scenario =  {
+coffee_scenario = {
+        "title": "Campus Break",
+        "text": "You have a short break after the group project issue before your next class.",
+        "options": [
+            {
+                "text": "Try a new cafe you heard about on Green Street.",
+                "traits": {"openness": 2}
+            },
+            {
+                "text": "Use the break to work on assignments.",
+                "traits": {"conscientiousness": 2}
+            },
+            {
+                "text": "Meet up with a friend for lunch.",
+                "traits": {"extraversion": 2}
+            }
+        ]
+    }
+
+friend_scenario = {
+        "title": "Friend Check In",
+        "text": "A friend suddenly texts you saying they have had a stressful day.",
+        "options": [
+            {
+                "text": "Call them and listen to what happened.",
+                "traits": {"agreeableness": 2}
+            },
+            {
+                "text": "Feel more stressed because you are already overwhelmed as is.",
+                "traits": {"neuroticism": 2}
+            },
+            {
+                "text": "Suggest doing something fun together later to cheer them up.",
+                "traits": {"extraversion": 2}
+            }
+        ]
+    }
+
+ evening_scenario =  {
             "title": "End of the day",
             "text": "After the long day, you finally have some free time.",
             "options": [
@@ -127,10 +165,6 @@ morning_scenario = {
         }
     ]
 
-
-
-    morning_scenario = scenarios[0]
-    group_project_scenario = scenarios[1]
 
 
     morning_choice = play_scenario(morning_scenario)
