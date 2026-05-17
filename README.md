@@ -45,7 +45,7 @@ Parameters:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Personality traits used: 
-- This program will use the Big Five personality traits:
+This program will use the Big Five personality traits:
 Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ Run the program in terminal with python main.py
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Testing: 
-to test the program, python test_project.py will be ran in terminal. 
+To test the program, python test-project.py will be ran in terminal. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Expected result:
