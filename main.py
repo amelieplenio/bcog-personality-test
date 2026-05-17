@@ -195,11 +195,18 @@ def main():
 
     scores = update_trait_scores(next_choice, scores)
 
-    group_choice = play_scenario(group_project_scenario)
+   group_choice = play_scenario(group_project_scenario)
     scores = update_trait_scores(group_choice, scores)
 
-    evening_choice = play_scenario(evening_project_scenario)
+    coffee_choice = play_scenario(coffee_scenario)
+    scores = update_trait_scores(coffee_choice, scores)
+
+    friend_choice = play_scenario(friend_scenario)
+    scores = update_trait_scores(friend_choice, scores)
+
+    evening_choice = play_scenario(evening_scenario)
     scores = update_trait_scores(evening_choice, scores)
+
 
     show_final_result(scores)
 
