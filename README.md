@@ -5,7 +5,7 @@
 
 
 
-This project will be an interactive Python game based off of Personality Psychology. In the game, the player will go through a real life college day and respond to different scenarios. Each choice will both change future scemarios and add points to different personality traits based on the Big Five personality traits. At the end of the game, the program will determine which Personality style the player most closely matches, and will display a fun screen of the personality type with a short description.
+This project will be an interactive Python game based off of Personality Psychology. In the game, the player will go through a real life college day and respond to different scenarios. Each choice will both change future scenarios and add points to different personality traits based on the Big Five personality traits. At the end of the game, the program will determine which Personality style the player most closely matches, and will display a fun screen of the personality type with a short description.
    
 I worked on this project alernating between VS Code and Github to make sure it would run properly and was formatted correctly.
 
