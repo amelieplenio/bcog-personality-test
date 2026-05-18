@@ -44,9 +44,19 @@ Parameters:
 - scores: final personality trait scores
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Personality traits used: 
-This program will use the Big Five personality traits:
-Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. 
+# Psychology Inspiration
+
+This project is inspired by the Big Five personality traits commonly studied in personality psychology.
+
+The five traits used throughout the game are:
+
+- Openness
+- Conscientiousness
+- Extraversion
+- Agreeableness
+- Neuroticism
+
+Throughout the game, the player's choices increase different personality trait scores. At the end of the game, the program determines which personality trait is strongest based on the player's decisions throughout the day.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Example Use Case:
