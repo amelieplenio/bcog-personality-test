@@ -1,0 +1,81 @@
+# Personality-adventure-game
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1842" height="1214" alt="image" src="https://github.com/user-attachments/assets/022be762-c530-4318-81f2-4725450bb952" />
+
+
+
+This project will be an interactive Python game based off of Personality Psychology. In the game, the player will go through a real life college day and respond to different scenarios. Each choice will both change future scenarios and add points to different personality traits based on the Big Five personality traits. At the end of the game, the program will determine which Personality style the player most closely matches, and will display a fun screen of the personality type with a short description.
+   
+I worked on this project alernating between VS Code and Github to make sure it would run properly and was formatted correctly.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Code structure: 
+- Interactive scenarios where the user makes choices
+- Scoring system based on the Big Five Personality traits
+- Final personality result with a short description
+- Simple terminal based gameplay
+Files in this Project
+- main.py: this will contain the main game logic and functions.
+  (NOT DONE: still need to finish all the scenarios and end screens.)
+
+- test_project.py: This will contain tests or the testing outline.
+
+- data/: will maybe contain the scenario and personality description data
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Planned Functions:
+- play_scenario(scenario): this will display a scenario and ask the player to then choose between options
+Parameters:
+
+- scenario: a structure containing the scenario text and choices.
+Returns: the player's selected choice
+
+
+- update_trait_scores(choice,scores): This will update the personality trait scores based on the users choices.
+Parameters: 
+- scores: data tracking current trait scores
+- choice: the option selected by the player 
+Returns:
+- updated scores data
+
+- show_final_result (scores): this will determine which personality trait has the highest score and displays the result. 
+Parameters:
+- scores: final personality trait scores
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Psychology Inspiration
+
+This project is inspired by the Big Five personality traits commonly studied in personality psychology.
+
+The five traits used throughout the game are:
+
+- Openness
+- Conscientiousness
+- Extraversion
+- Agreeableness
+- Neuroticism
+
+Throughout the game, the player's choices increase different personality trait scores. At the end of the game, the program determines which personality trait is strongest based on the player's decisions throughout the day.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Example Use Case:
+A user will run the program and is presented with a scenario like choosing how to spend a college day with a series of choices. Based on their answers, different scenarios will be presented, and points will be added to certain traits. After several scenarios, the program will calculate their dominant trait and display a result with a short explanation. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# How to run: 
+Run the program in terminal with python main.py
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Testing: 
+To test the program, python test-project.py will be ran in terminal. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Expected result:
+- The program runs without errors.
+- Scenarios will display correctly. 
+- Choices update trait scores.
+- A final personality trait will then be shown in some way at the end.
+- Branching scenarios that change based on player choices
+
+
