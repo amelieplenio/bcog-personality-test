@@ -155,14 +155,14 @@ friend_scenario = {
 
 evening_scenario =  {
             "title": "End of the day",
-            "text": "After a long day, you're finally at home and ready for dinner.",
+            "text": "You're finally at home and ready for dinner.",
             "options": [
                 {
                     "text": "Make a new recipe you saw online for dinner.",
                     "traits": {"openness": 2}
                 },
                 {
-                    "text": "Eat a quick dinner and get back to work.",
+                    "text": "Eat a quick and easy dinner and get back to work.",
                     "traits": {"conscientiousness": 2}
                 },
                 {
@@ -284,6 +284,26 @@ if current_trait == "conscientiousness":
                 }
             ]
         }
+
+elif current_trait == "openness":
+    final_scenario = {
+        "title": "Late Night",
+        "text": "After a long day, you're still thinking of new things in bed. You are...",
+        "options": [
+            {
+                "text": "Planning a future creative project.",
+                "traits": {"openness": 2}
+            },
+            {
+                "text": "Falling into a Youtube rabbit hole about deep sea creatures.",
+                "traits": {"openness": 2}
+            },
+            {
+                "text": "Texting your friends about all the things you tried today.",
+                "traits": {"extraversion": 2}
+            }
+        ]
+    }
 
 
 print("\nThe day has finally come to an end...")
