@@ -1,3 +1,5 @@
+# Creates a dictionary to track each personality trait score.
+def make_scores():
 def make_scores():
     return{
         "openness": 0,
