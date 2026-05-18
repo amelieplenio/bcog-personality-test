@@ -155,18 +155,18 @@ friend_scenario = {
 
 evening_scenario =  {
             "title": "End of the day",
-            "text": "After the long day, you're finally at home.",
+            "text": "After a long day, you're finally at home and ready for dinner.",
             "options": [
                 {
-                    "text": "Put on a new show you have heard about to wind down.",
+                    "text": "Make a new recipe you saw online for dinner.",
                     "traits": {"openness": 2}
                 },
                 {
-                    "text": "Go over your schedule for tomorrow again before you're able to relax.",
+                    "text": "Eat a quick dinner and get back to work.",
                     "traits": {"conscientiousness": 2}
                 },
                 {
-                    "text": "Call a friend to discuss your day.",
+                    "text": "Invite your roommate to come make dinner with you and talk.",
                     "traits": {"extraversion": 2}
                 }
             ]
@@ -246,6 +246,8 @@ else:
 
         next_choice = play_scenario(stressful_scenario)
 
+
+
 scores = update_trait_scores(next_choice, scores)
 
 group_choice = play_scenario(group_project_scenario)
@@ -259,6 +261,29 @@ scores = update_trait_scores(friend_choice, scores)
 
 evening_choice = play_scenario(evening_scenario)
 scores = update_trait_scores(evening_choice, scores)
+
+# This final scenario will change depending on the player's strongest trait so far.
+current_trait = get_highest_trait(scores)
+if current_trait == "conscientiousness":
+   final_scenario = {
+            "title": "Late Night",
+            "text": "You're in bed, ready for the day to end.",
+            "options": [
+                {
+                    "text": "You stay up sending your friends tiktoks.",
+                    "traits": {"extraversion": 2}
+                },
+                {
+                    "text": "Go to sleep early to make sure you have enough sleep tomorrow.",
+                    "traits": {"conscientiousness": 2}
+                },
+                {
+                    "text": "Start researching something completely random that you for some reason must know right now.",
+                    "traits": {"openness": 2}
+                }
+            ]
+        }
+
 
 print("\nThe day has finally come to an end...")
 print("Your choices throughout the day shaped your personality result.")
