@@ -1,4 +1,4 @@
-# Creates a dictionary to track each personality trait score.
+# # Creates starting scores for all Big Five personality traits.
 def make_scores():
     return{
         "openness": 0,
@@ -259,6 +259,9 @@ scores = update_trait_scores(friend_choice, scores)
 
 evening_choice = play_scenario(evening_scenario)
 scores = update_trait_scores(evening_choice, scores)
+
+print("\nThe day has finally come to an end...")
+print("Your choices throughout the day shaped your personality result.")
 
 show_final_result(scores)
 
