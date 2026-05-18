@@ -116,7 +116,7 @@ group_project_scenario =  {
     
 coffee_scenario = {
         "title": "Campus Break",
-        "text": "You have a short break after the group project issue before your next class.",
+        "text": "You have a short break after the group project crisis before your next class.",
         "options": [
             {
                 "text": "Try a new cafe you heard about on Green Street.",
