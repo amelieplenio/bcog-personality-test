@@ -1,4 +1,5 @@
-# # Creates starting scores for all Big Five personality traits.
+# Creates starting scores for all Big Five personality traits.
+
 def make_scores():
     return{
         "openness": 0,
