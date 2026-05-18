@@ -44,7 +44,7 @@ def update_trait_scores (choice,scores):
 def get_highest_trait(scores):
     return max(scores, key=scores.get)
        
-
+# Will show the player's final result and description.
 def show_final_result(scores):
 
     print("\nYour final trait scores:")
