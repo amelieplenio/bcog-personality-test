@@ -264,21 +264,22 @@ scores = update_trait_scores(evening_choice, scores)
 
 # This final scenario will change depending on the player's strongest trait so far.
 current_trait = get_highest_trait(scores)
+
 if current_trait == "conscientiousness":
    final_scenario = {
             "title": "Late Night",
-            "text": "You're in bed, ready for the day to end.",
+            "text": "After a productive day, your brain still isn't fully ready to relax yet as you lay in bed. You are...",
             "options": [
                 {
-                    "text": "You stay up sending your friends tiktoks.",
+                    "text": "Sending your friends funny tiktoks.",
                     "traits": {"extraversion": 2}
                 },
                 {
-                    "text": "Go to sleep early to make sure you have enough sleep tomorrow.",
+                    "text": "Taking a melatonin to make sure you have enough sleep for tomorrow.",
                     "traits": {"conscientiousness": 2}
                 },
                 {
-                    "text": "Start researching something completely random that you for some reason must know right now.",
+                    "text": "Researching something completely random that you for some reason must know right now.",
                     "traits": {"openness": 2}
                 }
             ]
