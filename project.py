@@ -97,7 +97,7 @@ morning_scenario = {
     
 group_project_scenario =  {
             "title": "Group Project",
-            "text": "You realize your group project is due tomorrow, but nobody else has started!",
+            "text": "All of sudden you realize your group project is due tomorrow, but nobody else has started!",
             "options": [
                 {
                     "text": "Make a firm plan about who is doing what and when it needs to be done.",
