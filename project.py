@@ -304,7 +304,29 @@ elif current_trait == "openness":
             }
         ]
     }
+    
+else:
+    final_scenario = { 
+        "title": "Still Thinking",
+        "text": "After a full day, you're lying in bed still thinking.",
+        "options": [
+            {
+                "text": "Overthink about something embarrassing from earlier.",
+                "traits": {"neuroticism": 2}
+            },
+            {
+                "text": "Start reading old messages.",
+                "traits": {"agreeableness": 2}
+            },
+            {
+                "text": "Decide tomorrow is going to be your most productive day ever.",
+                "traits": {"conscientiousness": 2}
+            }
+        ]
+    }
 
+final_choice = play_scenario(final_scenario)
+scores = update_trait_scores(final_choice, scores)
 
 print("\nThe day has finally come to an end...")
 print("Your choices throughout the day shaped your personality result.")
