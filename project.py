@@ -1,5 +1,5 @@
 # Creates a dictionary to track each personality trait score.
-def make_scores():
+
 def make_scores():
     return{
         "openness": 0,
@@ -17,6 +17,8 @@ def print_section(title):
     print_line()
     print(title.upper())
     print_line()
+
+# Displays a scenario and then lets the player choose an option.
 
 def play_scenario(scenario):
     print_section(scenario["title"])
