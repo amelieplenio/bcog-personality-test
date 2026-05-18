@@ -1,5 +1,4 @@
 # Creates a dictionary to track each personality trait score.
-
 def make_scores():
     return{
         "openness": 0,
@@ -19,7 +18,6 @@ def print_section(title):
     print_line()
 
 # Displays a scenario and then lets the player choose an option.
-
 def play_scenario(scenario):
     print_section(scenario["title"])
     print(scenario["text"])
@@ -36,7 +34,7 @@ def play_scenario(scenario):
 
         print("Please enter 1, 2, or 3.")
     
-   
+# Updates the personality scores based on the player's choice.
 def update_trait_scores (choice,scores):
     for trait, points in choice["traits"].items():
         scores[trait] += points
@@ -54,7 +52,7 @@ def show_final_result(scores):
     
     for trait, score in scores.items():
         print(f"{trait.title()}: {score}")
-
+# Finds the trait with the highest score at the end of the game.
     highest_trait = get_highest_trait(scores)
     
     descriptions = {
@@ -178,7 +176,7 @@ evening_scenario =  {
 
 morning_choice = play_scenario(morning_scenario)
 scores = update_trait_scores(morning_choice, scores)
-
+# This section will change later events depending on the player's earlier choices.
 if morning_choice["traits"] == {"conscientiousness": 2}:
 
         productive_scenario = {
